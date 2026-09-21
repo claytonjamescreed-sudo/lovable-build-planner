@@ -27,7 +27,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const [answer, setAnswer] = useState<Answer | null>(answers[0]);
+  const [answer, setAnswer] = useState<Answer | null>(answers[0] ?? null);
   const [query, setQuery] = useState("");
 
   const scrollToAnswer = () => {
